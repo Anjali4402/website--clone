@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/index.js" defer></script>
+    <title>UsabilityHub</title>
+</head>
+<body>
+    <div class="font-mono text-sm text-center p-4 bg-sky-500 text-white font-bold">
+        <h1>🤩New to UsabilityHub:Open and closed card sorting! Read more -></h1>
+    </div>
+    <nav class="px-8 max-w-7xl mx-auto">
+        <header>
+            <div class="flex justify-between bg-white mt-2 relative">
+                <div class="flex items-center">
+                    <span class="text-5xl bg-clip-text bg-red-900 text-transparent">&#x2666;</span>
+                    <h1 class="text-2xl text-slate-700">UsabilityHub</h1>
+                    <button class="bg-blue-100 p-2 ml-3 text-blue-700 hidden lg:block">Become a tester</button>
+                </div>
+                <div>
+                    <div class="absolute top-14 hidden left-0 py-4 w-full bg-white lg:flex gap-4 lg:static" id="menu-bar">
+                        <ul class="lg:flex text-slate-700 gap-6 text-lg py-4">
+                            <li class="py-4">Product</li>
+                            <li class="py-4">Customers</li>
+                            <li class="py-4">Pricing</li>
+                            <li>
+                                <p class="text-lg py-4 flex" onclick="others()" >Resources <span class="h-5 w-5 pt-2"><img src="/images/arrow.png" alt="not"></span> </p>
+                                <div >
+                                    <ul class="absolute w-full lg:w-fit lg:pr-6 pl-8 hidden bg-white rounded-lg" id="resources">
+                                        <li class="py-4">Example</li>
+                                        <li class="py-4">Testing guides</li>
+                                        <li class="py-4">Help center</li>
+                                        <li class="py-4">Blog</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="flex flex-col gap-6 lg:flex-row  lg:items-center" id="buttons">
+                            <button class="border border-slate-400 h-10 px-6 my-2 font-bold rounded-lg text-base text-slate-700">Sign in</button>
+                            <button class="border border-slate-400 h-10 px-6 my-2 font-bold bg-sky-500 rounded-lg text-white text-base">Sign up</button>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="flex justify-center items-center mr-2 lg:hidden" >
+                    <div class="flex flex-col" onclick="menu()">
+                        <span class="w-4 my-px border border-slate-700"></span>
+                        <span class="w-4 my-px border border-slate-700"></span>
+                        <span class="w-4 my-px border border-slate-700"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12 md:pt-16 lg:pt-0 md:flex md:flex-row-reverse  md:items-center ">
+                <div class="md:px-0 md:basis-7/12  lg:flex lg:justify-end">
+                    <img class="lg:h-[26rem]" src="/images/home-page.png" alt="image1">
+                </div>
+                <section class="  my-6 md:my-0 text-center md:text-start md:basis-5/12 pr-8 lg:pr-0">
+                    <h1 class="text-5xl font-medium text-[navy] ">Design confidently.</h1>
+                    <p class="text-xl my-6 px-2 text-blue-400">UsabilityHub is a remote user research platform that takes the guesswork out of design decision by vaildating them with real users.</p>
+                    <button class="border border-slate-400 w-full md:w-fit py-3 my-2 font-bold bg-sky-500 rounded-lg text-white text-base md:mx-auto md:px-8">Get Started</button>
+                </section>
+            </div>
+        </header>
+        <section>
+            <p class=" text-center text-base my-14 px-4 font-bold text-blue-500">The world's best companies rely on UsabilityHub to make better design decisions.</p>
+            <div class = "flex flex-row flex-wrap gap-2 md:gap-9 lg:gap-6 items-center">
+                <div class="grow h-12 flex justify-center"><img src="/images/amazon.png" alt=""></div>
+                <div class="grow h-12 flex justify-center"><img src="/images/google.png" alt=""></div>
+                <div class="grow h-12 flex justify-center"><img src="/images/taskRabbit.png" alt=""></div>
+                <div class="grow h-12 flex justify-center"><img src="/images/airtable.png" alt=""></div>
+                <div class="grow h-12 flex justify-center"><img src="/images/box.png" alt=""></div>
+                <div class="grow h-8 flex justify-center"><img src="/images/godaddy.svg" alt=""></div>
+                <div class="grow h-12 flex justify-center"><img src="/images/asana.png" alt=""></div>
+            </div>
+        </section>
+        <section class="text-center p-12 mt-16">
+            <div >
+                <h1 class="font-bold text-blue-900 text-3xl ">Your user research Swiss Army knife</h1>
+                <button class="border border-slate-700 m-6 px-4 py-2 text-blue-900 text-base font-medium hover:text-sky-500 hover:border-sky-500">See all features &#x279E;</button>
+            </div>
+            <div class="grid gap-2  grid-cols-1  min-[480px]:grid-cols-2 md:grid-cols-3 md:gap-10">
+                <div class="px-2">
+                    <div><i class="fa-regular fa-file-lines bg-cyan-400 p-3 rounded-full text-white px-4"></i></div>
+                    <h2 class="font-bold text-blue-900 text-2xl">Card sorting</h2>
+                    <p class="text-blue-900">Discover how people group and label information.</p>
+                    <button class="border border-slate-400 my-6 mx-2 p-2 text-blue-900 text-base font-medium hover:text-sky-500 hover:border-sky-500">Learn more &#x279E;</button>
+                </div>
+                <div class=" px-2">
+                    <div><i class="text-white bg-pink-400 p-3 rounded-lg fa-solid fa-paperclip"></i></div>
+                    <h2 class="font-bold text-blue-900 text-2xl">Prototype tests</h2>
+                    <p class="text-blue-900">Discover how people navigate your Figma prototypes.</p>
+                    <button class="border border-slate-400 my-6 mx-2 p-2 text-blue-900 text-base font-medium hover:text-sky-500 hover:border-sky-500">Learn more &#x279E;</button>
+                </div>
+                <div class="px-2">
+                    <div><i class="fa-sharp fa-solid fa-arrow-left bg-violet-500 py-2 px-3 rounded-lg text-white text-xl"></i></div>
+                    <h2 class="font-bold text-blue-900 text-2xl">First click tests</h2>
+                    <p class="text-blue-900">Test interaction with first click and navigatoin tests.</p>
+                    <button class="border border-slate-400 my-6 mx-2 p-2 text-blue-900 text-base font-medium hover:text-sky-500 hover:border-sky-500">Learn more &#x279E;</button>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-center"><i class="fa-solid fa-question bg-yellow-500 px-3 py-1 text-white text-2xl rounded-lg"></i></div>
+                    <h2 class="font-bold text-blue-900 text-2xl">Design surveys</h2>
+                    <p class="text-blue-900">Get feedback on images,videos or audio fires.</p>
+                    <button class="border border-slate-400 my-6 mx-2 p-2 text-blue-900 text-base font-medium hover:text-sky-500 hover:border-sky-500">Learn more &#x279E;</button>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-center"><i class="fa-regular fa-heart bg-red-700 p-3 rounded-lg"></i></div>
+                    <h2 class="font-bold text-blue-900 text-2xl">Preference tests</h2>
+                    <p class="text-blue-900">Find out which designs users prefer and why.</p>
+                    <button class="border border-slate-400 my-6 mx-2 p-2 text-blue-900 text-base font-medium hover:text-sky-500 hover:border-sky-500">Learn more &#x279E;</button>
+                </div>
+                <div class="px-2">
+                    <div><i class="fa-regular fa-hard-drive bg-sky-500 p-2 px-3 rounded-lg text-xl text-white"></i></div>
+                    <h2 class="font-bold text-blue-900 text-2xl">Five second tests</h2>
+                    <p class="text-blue-900">Test comprehensibility by measuring first impressions.</p>
+                    <button class="border border-slate-400 my-6 mx-2 p-2 text-blue-900 text-base font-medium hover:text-sky-500 hover:border-sky-500">Learn more &#x279E;</button>
+                </div>
+            </div>
+        </section>
+        <div class=" py-10">
+            <div class="flex flex-col md:flex-row">
+                <div class="m-8 md:m-0 flex-1 md:w-56  md:p-6">
+                    <img class="w-full" src="/images/first.png" alt="">
+                </div>
+                <div class="py-4 flex-1 ">
+                    <p class="text-xl text-blue-500 my-2">Effortless validation for</p>
+                    <h1 class="text-3xl text-blue-800 font-medium my-2">Design professionals</h1>
+                    <p class="text-lg md:text-xl text-blue-400 my-4">Test interfaces,interaction flows,inconography and more,to help you create intuitive and delightful experiences for your users.</p>
+                    <h1 class="text-2xl text-blue-800 py-2">ChartMogul</h1>
+                    <p class="text-xl text-blue-500 my-4 pr-6">The navigation test is god's gift to UI designers, it probably has the best power-to-simplicity ratio of any software,ever.</p>
+                    <div class="flex pl-2 items-center my-6">
+                        <img class="h-12 w-12 rounded-full" src="/images/person-image.jpg" alt="">
+                        <div class="pl-4">
+                            <p class="text-xl text-blue-500">Nick Franklin</p>
+                            <p class="text-lg text-blue-400">Chief Executive officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-8">
+            <div class="flex flex-col md:flex-row-reverse">
+                <div class="m-8 md:m-0 flex-1 md:w-56  md:pr-6">
+                    <img class="w-full" src="/images/second.png" alt="">
+                </div>
+                <div class="py-4 flex-1">
+                    <p class="text-xl text-blue-500 my-2">optimisation for</p>
+                    <h1 class="text-3xl text-blue-800 font-medium my-2">Marketers</h1>
+                    <p class="text-lg md:text-xl text-blue-400 my-4">Fine-tune landing pages, messaging and creative, helping you optimise conversion rates on marketing campaigns and product launches.</p>
+                    <h1 class="text-2xl text-blue-800 py-2">PHILIPS</h1>
+                    <p class="text-xl text-blue-500 my-4 pr-6">We use UsabilityHub tests to help us make decisions for various projects, From web and mobile design to marketing activities.</p>
+                    <div class="flex pl-2 items-center my-6">
+                        <img class="h-12 w-12 rounded-full" src="/images/person-image.jpg" alt="">
+                        <div class="pl-4">
+                            <p class="text-xl text-blue-500">Rick van de Ven</p>
+                            <p class="text-lg text-blue-400">Digital Marketing Analyst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-8">
+            <div class="flex flex-col md:flex-row">
+                <div class="m-8 md:m-0 flex-1 md:w-56  md:pr-6">
+                    <img class="w-full" src="/images/third.png" alt="">
+                </div>
+                <div class="py-4 flex-1">
+                    <p class="text-xl text-blue-500 my-2">Easier decision making for</p>
+                    <h1 class="text-3xl text-blue-800 font-medium my-2">Product managers</h1>
+                    <p class="text-lg md:text-xl text-blue-400 my-4">Ensure you're delivering the right feautres to the right customers by vaildating product concepts with your targers audience.</p>
+                    <button class="bg-red-900 text-white p-2 text-sm">The Economist Group</button>
+                    <p class="text-xl text-blue-500 my-4 pr-6">adopting usabilityHub got us into the habit of asking our users question before locking in decisions.</p>
+                    <div class="flex pl-2 items-center my-6">
+                        <img class="h-12 w-12 rounded-full" src="/images/person-image.jpg" alt="">
+                        <div class="pl-4">
+                            <p class="text-xl text-blue-500">Ron Diorio</p>
+                            <p class="text-lg text-blue-400">VP innovation & New Products</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>   
+    <section class="bg-white py-14">
+        <div class="text-center">
+            <h1 class="text-blue-800 text-4xl py-8 font-semibold">Start testing today</h1>
+            <p class="text-slate-700 text-lg py-4">Take the fuesswork out of design decisions</p>
+            <button class="py-5 px-8 font-bold bg-sky-500 rounded-lg text-white text-base">Get Started</button>
+        </div>
+    </section>
+
+    <section class="font-sans font-medium text-blue-600  mx-auto bg-blue-100 xl:p-20 md:p-6 md:py-16">
+        <ul class="max-w-7xl mx-auto flex flex-col md:flex-row md:gap-4">
+            <li class="flex justify-center md:block m-14 md:m-0 md:mr-10 lg:mr-20">
+                <div class="flex items-center">
+                    <span class="text-5xl bg-clip-text bg-red-900 text-transparent">&#x2666;</span>
+                    <h1 class="text-2xl text-slate-700">UsabilityHub</h1>
+                </div>
+            </li>
+            <li class="flex flex-col pb-6 grow text-center md:text-start">
+                <div class="font-bold py-3 text-xl">Product</div>
+                <a href="#" class="">Overview</a>
+                <a href="#">Pricing</a>
+                <a href="#">UsabilityHub panel</a>
+                <a href="#">Customers</a>
+                <a href="#">Status page</a>
+            </li>
+            <li class="flex flex-col pb-6 grow text-center md:text-start">
+                <div class="font-bold py-3 text-xl">Methodologles</div>
+                <a href="#">Card sorting</a>
+                <a href="#">First click tests</a>
+                <a href="#">Preference tests</a>
+                <a href="#">Five second tests</a>
+                <a href="#">Design surveys</a>
+            </li>
+            <li class="flex flex-col pb-6 grow text-center md:text-start">
+                <div class="font-bold py-3 text-xl">Resources</div>
+                <a href="#">Blog</a>
+                <a href="#">Examples</a>
+                <a href="#">Testing guides</a>
+                <a href="#">Help center</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+            </li>
+            
+        </ul>
+    </section>
+    <footer class="bg-blue-200  text-lg text-blue-800 text-center p-6 ">
+        <a class="px-2" href="#">Privacy policy</a>
+        <a class="px-2" href="#">Terms & conditions</a>
+        <a class="px-2" href="#">Security information</a>
+    </footer>
+</body>
+</html>
